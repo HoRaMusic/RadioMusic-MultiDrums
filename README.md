@@ -11,7 +11,3 @@ this give closer to real analog drums and hallow to offer typical settable param
 
 The 6 linndrum sounds are based on 16bit 44100hz wav files.
 
-MANUAL: 
-
-- press the red button to select a sound
-- 
