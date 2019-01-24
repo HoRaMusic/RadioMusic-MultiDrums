@@ -51,6 +51,8 @@ int instrumentsParams[4][4]; // [instrument][paramNumber]
 int previousInstrumentsParams[4][4]; // [instrument][paramNumber]
 int frame;
 int dividedFrame;
+int param1CV;
+int param2CV;
 //byte bassDrumParams[4];
 int shiftTimer = 0;
 boolean activeTrig = false;

@@ -2,9 +2,9 @@
 void checkInterface(){
     // Read pots + CVs
     int param1Pot = analogRead(CHORD_POT_PIN); 
-    int param1CV = analogRead(CHORD_CV_PIN); 
+    param1CV = analogRead(CHORD_CV_PIN); 
     int param2Pot = analogRead(ROOT_POT_PIN); 
-    int param2CV = analogRead(ROOT_CV_PIN); 
+    param2CV = analogRead(ROOT_CV_PIN); 
     int param1Raw;
     int param2Raw;
     if (instrument != 2 && instrument != 3 )
@@ -177,7 +177,25 @@ void setControlValues(){
           {
               param[0] = param1;
               param[1] = param2;
-              if ((param[i] < instrumentsParams[instrument][i] + POT_TOLERANCE && param[i] > instrumentsParams[instrument][i] - POT_TOLERANCE) )
+              if (analogRead(CHORD_CV_PIN) < 15 && i == 0)
+              {
+                if ((param[i] < instrumentsParams[instrument][i] + POT_TOLERANCE && param[i] > instrumentsParams[instrument][i] - POT_TOLERANCE) )
+                {
+                  instrumentsParams[instrument][i] = param[i];
+                }
+              }
+              else if (analogRead(CHORD_CV_PIN) > 15 && i == 0)
+              {
+                  instrumentsParams[instrument][i] = param[i];
+              }
+              if (analogRead(ROOT_CV_PIN) < 15 && i == 1)
+              {
+                if ((param[i] < instrumentsParams[instrument][i] + POT_TOLERANCE && param[i] > instrumentsParams[instrument][i] - POT_TOLERANCE) )
+                {
+                  instrumentsParams[instrument][i] = param[i];
+                }
+              }
+              else if (analogRead(ROOT_CV_PIN) > 15 && i == 1)
               {
                   instrumentsParams[instrument][i] = param[i];
               }
@@ -186,7 +204,25 @@ void setControlValues(){
           {
               param[2] = param1;
               param[3] = param2;
-              if ((param[i + 2] < instrumentsParams[instrument][i + 2] + POT_TOLERANCE && param[i + 2] > instrumentsParams[instrument][i + 2] - POT_TOLERANCE) )
+              if (analogRead(CHORD_CV_PIN) < 15 && i == 0)
+              {
+                if ((param[i + 2] < instrumentsParams[instrument][i + 2] + POT_TOLERANCE && param[i + 2] > instrumentsParams[instrument][i + 2] - POT_TOLERANCE) )
+                {
+                  instrumentsParams[instrument][i + 2] = param[i + 2];
+                }
+              }
+              else if (analogRead(CHORD_CV_PIN) > 15 && i == 0)
+              {
+                  instrumentsParams[instrument][i + 2] = param[i + 2];
+              }
+              if (analogRead(ROOT_CV_PIN) < 15 && i == 1)
+              {
+                if ((param[i + 2] < instrumentsParams[instrument][i + 2] + POT_TOLERANCE && param[i + 2] > instrumentsParams[instrument][i + 2] - POT_TOLERANCE) )
+                {
+                  instrumentsParams[instrument][i + 2] = param[i + 2];
+                }
+              }
+              else if (analogRead(ROOT_CV_PIN) > 15 && i == 1)
               {
                   instrumentsParams[instrument][i + 2] = param[i + 2];
               }
