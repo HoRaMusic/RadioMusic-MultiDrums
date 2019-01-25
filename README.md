@@ -21,7 +21,7 @@ The leds indicate the playing instrument 1: kick, 2: snare, 3: hi-hat, 4: sample
 
 KICK AND SNARE CONTROLS:
 
-![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/KickSnare.png | width=200)
+![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/KickSnare.png = 250 * 250)
 
 HI-HAT CONTROLS:
 
