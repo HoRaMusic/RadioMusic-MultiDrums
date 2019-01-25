@@ -1,7 +1,7 @@
 # MultiDrums
-Alternative firmwares for MTM "chord organ" or "radio music" (eurorack module)
+Alternative firmware for MTM "chord organ" or "radio music" (eurorack module)
 
-"MultiDrums" is an alternative frimwares for both "chord organ" and "radio music" modules produces by "Music Thing Modular".
+"MultiDrums" is an alternative firmware for both "chord organ" and "radio music" modules produced by "Music Thing Modular".
 
 This firmawares hallows to play analog drums sounds closed to those used in the Hora music "analog drums" VCV rack plugin 
 and 6 Linn drum sounds (samples).
@@ -26,10 +26,12 @@ KICK AND SNARE CONTROLS:
 HI-HAT CONTROLS:
 
 ![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/hat.png)
+![](https://github.com/HoRaMusic/MultiDrums/blob/master/hat.png | width=200)
 
 SAMPLES CONTROLS:
 
 ![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/samples.png)
+![](https://github.com/HoRaMusic/MultiDrums/blob/master/samples.png | width=200)
 
 
 
