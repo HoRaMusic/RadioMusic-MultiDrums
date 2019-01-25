@@ -11,6 +11,7 @@ this give closer to real analog drums and hallow to offer typical settable param
 
 The 6 linndrum sounds are based on 16bit 44100hz wav files : Kick, Snare, Clap, Closed hi-hat, open hi-hat, crash cymbale.
 
+
 MAIN CONTROLS:
 
 ![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/modulePic.png)
@@ -18,6 +19,7 @@ MAIN CONTROLS:
 
 
 The leds indicate the playing instrument 1: kick, 2: snare, 3: hi-hat, 4: samples.
+
 
 ADVANCED CONTROLS:
 
