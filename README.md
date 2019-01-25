@@ -12,6 +12,8 @@ this give closer to real analog drums and hallow to offer typical settable param
 The 6 linndrum sounds are based on 16bit 44100hz wav files : Kick, Snare, Clap, Closed hi-hat, open hi-hat, crash cymbale. 
 (The module can play 2 samples simultaneously and the sample selection is CV controlable).
 
+This module used DSP write with the Vult transcompiler : https://modlfo.github.io/vult/
+
 
 MAIN CONTROLS:
 
