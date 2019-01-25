@@ -22,7 +22,7 @@ MAIN CONTROLS:
 
 
 The leds indicate the playing instrument 1: kick, 2: snare, 3: hi-hat, 4: samples.
-The "chord" and "Root" inputs are also used for cv control of parameter 1 and 2, here is a more detailed description:
+The "chord" and "Root" inputs are also used for cv control of parameter 1 and 2 (0v to 3.3v), here is a more detailed description:
 
 
 
