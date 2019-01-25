@@ -19,17 +19,11 @@ MAIN CONTROLS:
 
 The leds indicate the playing instrument 1: kick, 2: snare, 3: hi-hat, 4: samples.
 
-KICK AND SNARE CONTROLS:
+ADVANCED CONTROLS:
 
-![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/KickSnare.png)
+![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/allControls.png)
 
-HI-HAT CONTROLS:
 
-![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/hat.png)
-
-SAMPLES CONTROLS:
-
-![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/samples.png)
 
 
 
