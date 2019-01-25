@@ -29,7 +29,7 @@ The "chord" and "Root" inputs are also used for cv control of parameter 1 and 2 
 
 ADVANCED CONTROLS:
 
-![alt text](https://github.com/HoRaMusic/MultiDrums/blob/master/allControls.png)
+![alt text](https://github.com/HoRaMusic/RadioMusic-MultiDrums/blob/master/controlsF.png)
 
 
 
