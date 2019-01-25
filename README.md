@@ -7,9 +7,10 @@ This firmawares hallows to play analog drums sounds closed to those used in the 
 and 6 Linn drum sounds (samples).
 
 The three "analog sounds" (kick snare and hi hat) are based on modeling and don't use samples, 
-this give closer to real analog drums and hallow to offer typical settable parameters of analog drums.
+this give closer to real analog drums and hallow to offer typical settable parameters of analog drums (most of these are CV controlable).
 
-The 6 linndrum sounds are based on 16bit 44100hz wav files : Kick, Snare, Clap, Closed hi-hat, open hi-hat, crash cymbale.
+The 6 linndrum sounds are based on 16bit 44100hz wav files : Kick, Snare, Clap, Closed hi-hat, open hi-hat, crash cymbale. 
+(The module can play 2 samples simultaneously and the sample selection is CV controlable).
 
 
 MAIN CONTROLS:
