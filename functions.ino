@@ -177,7 +177,7 @@ void setControlValues(){
           {
               param[0] = param1;
               param[1] = param2;
-              if (analogRead(CHORD_CV_PIN) < 15 && i == 0)
+              if ((analogRead(CHORD_CV_PIN) < 15 && i == 0) || instrument == 3)
               {
                 if ((param[i] < instrumentsParams[instrument][i] + POT_TOLERANCE && param[i] > instrumentsParams[instrument][i] - POT_TOLERANCE) )
                 {
@@ -188,7 +188,7 @@ void setControlValues(){
               {
                   instrumentsParams[instrument][i] = param[i];
               }
-              if (analogRead(ROOT_CV_PIN) < 15 && i == 1)
+              if ((analogRead(ROOT_CV_PIN) < 15 && i == 1 ) || instrument == 3)
               {
                 if ((param[i] < instrumentsParams[instrument][i] + POT_TOLERANCE && param[i] > instrumentsParams[instrument][i] - POT_TOLERANCE) )
                 {
@@ -204,7 +204,7 @@ void setControlValues(){
           {
               param[2] = param1;
               param[3] = param2;
-              if (analogRead(CHORD_CV_PIN) < 15 && i == 0)
+              if ((analogRead(CHORD_CV_PIN) < 15 && i == 0 ) || instrument == 3)
               {
                 if ((param[i + 2] < instrumentsParams[instrument][i + 2] + POT_TOLERANCE && param[i + 2] > instrumentsParams[instrument][i + 2] - POT_TOLERANCE) )
                 {
@@ -215,7 +215,7 @@ void setControlValues(){
               {
                   instrumentsParams[instrument][i + 2] = param[i + 2];
               }
-              if (analogRead(ROOT_CV_PIN) < 15 && i == 1)
+              if ((analogRead(ROOT_CV_PIN) < 15 && i == 1) || instrument == 3)
               {
                 if ((param[i + 2] < instrumentsParams[instrument][i + 2] + POT_TOLERANCE && param[i + 2] > instrumentsParams[instrument][i + 2] - POT_TOLERANCE) )
                 {
@@ -304,7 +304,7 @@ void trigInstrument(){
     
     if (instrument == SAMPLES)
     {
-      param2CV = analogRead(CHORD_CV_PIN); 
+      //param2CV = analogRead(CHORD_CV_PIN); 
         if (controlPage2 == false)
         {
             sampleNumber1 = instrumentsParams[instrument][1] /20;
@@ -505,7 +505,7 @@ void trigInstrument(){
             if (sampleNumber2 == 0)
             {
               
-              if (param2CV >500 && activeOpenHatTrig == false )
+              if (param1CV >500 && activeOpenHatTrig == false )
               {
                   sound1.play(AudioSampleKick);
                   activeOpenHatTrig = true;
@@ -514,7 +514,7 @@ void trigInstrument(){
             }
             else if (sampleNumber2 == 1)
             {
-              if (param2CV >500 && activeOpenHatTrig == false )
+              if (param1CV >500 && activeOpenHatTrig == false )
               {
                   sound1.play(AudioSampleSnare);
                   activeOpenHatTrig = true;
@@ -523,7 +523,7 @@ void trigInstrument(){
             }
             else if (sampleNumber2 == 2)
             {
-              if (param2CV >500 && activeOpenHatTrig == false )
+              if (param1CV >500 && activeOpenHatTrig == false )
               {
                   sound1.play(AudioSampleClap);
                   activeOpenHatTrig = true;
@@ -532,7 +532,7 @@ void trigInstrument(){
             }
             else if (sampleNumber2 == 3)
             {
-              if (param2CV >500 && activeOpenHatTrig == false )
+              if (param1CV >500 && activeOpenHatTrig == false )
               {
                   sound1.play(AudioSampleHihatopened);
                   activeOpenHatTrig = true;
@@ -541,7 +541,7 @@ void trigInstrument(){
             }
             else if (sampleNumber2 == 4)
             {
-              if (param2CV >500 && activeOpenHatTrig == false )
+              if (param1CV >500 && activeOpenHatTrig == false )
               {
                   sound1.play(AudioSampleHihatclosed);
                   activeOpenHatTrig = true;
@@ -550,7 +550,7 @@ void trigInstrument(){
             }
             else if (sampleNumber2 == 5)
             {
-              if (param2CV >500 && activeOpenHatTrig == false )
+              if (param1CV >500 && activeOpenHatTrig == false )
               {
                   sound1.play(AudioSampleExtraSound);
                   activeOpenHatTrig = true;
@@ -562,7 +562,7 @@ void trigInstrument(){
                 activeTrig = false;
             }
             
-            if (param2CV < 200)
+            if (param1CV < 200)
             { 
                   activeOpenHatTrig = false;
             }
