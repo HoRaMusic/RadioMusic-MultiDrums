@@ -1,7 +1,7 @@
 # MultiDrums
 Alternative firmware for MTM "chord organ" or "radio music" (eurorack module)
 
-"MultiDrums" is an alternative firmware for both "chord organ" and "radio music" modules produced by "Music Thing Modular".
+"MultiDrums" is an alternative firmware for both MTM "chord organ" and "radio music" modules witten by "hora music".
 
 This firmawares hallows to play analog drums sounds closed to those used in the Hora music "analog drums" VCV rack plugin 
 and 6 Linn drum sounds (samples).
